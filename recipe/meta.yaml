@@ -18,9 +18,11 @@ requirements:
     - {{ compiler('c') }}       # [ppc_arch != "p10"]
     - {{ compiler('cxx') }}     # [ppc_arch != "p10"]
     - bazel {{ bazel }}
+    - setuptools {{ setuptools }}
   host:
     - git >=2.2
     - python  # noarch package; don't tie to specific python version
+    - setuptools {{ setuptools }}
   run:
     - python  # noarch package; don't tie to specific python version
     - numpy {{ numpy }}
