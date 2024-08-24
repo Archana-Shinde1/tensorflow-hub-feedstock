@@ -23,6 +23,7 @@ requirements:
     - {{ compiler('c') }}       # [ppc_arch != "p10"]
     - {{ compiler('cxx') }}     # [ppc_arch != "p10"]
     - bazel {{ bazel }}
+    - pip {{ pip }}
     - git >=2.2
     - python  # noarch package; don't tie to specific python version
     - setuptools {{ setuptools }}
