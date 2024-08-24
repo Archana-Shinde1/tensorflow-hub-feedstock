@@ -35,6 +35,8 @@ requirements:
     - tensorflow-estimator {{ tf_estimator }}
 
 test:
+  requires:
+    - pip {{ pip }}
   imports:
     - tensorflow_hub
 
